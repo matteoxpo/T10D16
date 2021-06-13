@@ -22,7 +22,7 @@
 4. [Chapter IV](#chapter-iv) 
 
 
-## Chapter I
+# Chapter I
 
 ## Level 3. Room 2.
 
@@ -76,7 +76,7 @@ LOADING Room 2…***
 ***LOADING...***
 
 
-## Chapter II
+# Chapter II
 
 ## List 1.
 
@@ -145,7 +145,7 @@ LOADING Room 2…***
 ***LOADING...***
 
 
-## Chapter III
+# Chapter III
 
 ## Quest 1. Strlen.
 
@@ -315,7 +315,7 @@ LOADING Room 2…***
 ***LOADING...***
 
 
-## Chapter IV
+# Chapter IV
 
 \> *Ввести "Теперь я могу выйти?"*
 

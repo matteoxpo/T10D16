@@ -23,7 +23,7 @@ The russian version of the task can be found in the repository.
 4. [Chapter IV](#chapter-iv) 
 
 
-## Chapter I
+# Chapter I
 
 ## Level 3. Room 2.
 
@@ -77,7 +77,7 @@ It looks a lot like a man printout. Even the font is the same as in the terminal
 ***LOADING...***
 
 
-## Chapter II
+# Chapter II
 
 ## List 1.
 
@@ -146,7 +146,7 @@ You come up to the computer and notice another open book next to it. Somehow you
 ***LOADING...***
 
 
-## Chapter III
+# Chapter III
 
 ## Quest 1. Strlen.
 
@@ -316,7 +316,7 @@ Ok. It's not the worst thing you've done to get the doors to open.
 ***LOADING...***
 
 
-## Chapter IV
+# Chapter IV
 
 \> *Type in "Can I leave now?"*
 
