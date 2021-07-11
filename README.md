@@ -1,6 +1,8 @@
 # T10D16
 The russian version of the task can be found in the repository.
 
+You can find some useful video materials [here](https://edu.21-school.ru/video/selection/925365ef-066d-4be6-81a9-2667102d8da9).
+
 ![This day will help you get acquainted with characters and strings (C).](misc/eng/images/day10_door.png)
 
 
@@ -153,6 +155,9 @@ You come up to the computer and notice another open book next to it. Somehow you
 Perhaps you should also create tests for every new function to make sure they work absolutely correctly. Who knows how broken code can affect the linguistics module that is already not working. And you still need to get out of this room. Plus, if something goes wrong, it will be easier to find the error with the tests. 
 
 For each added function in src/s21_string.h, add a test developed based on the idea of unit testing to the src/s21_string_test.h file, with the name of the function and the test_ prefix which checks the function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. 
+
+> DON'T FORGET! All your programs are tested for the style norm and memory leaks. Start-up instructions
+> the list of tests is also in the `materials` folder
 
 ***== Quest 1 received. Create src/s21_string.h and src/s21_string.c files and add declaration and definition of the s21_strlen function to them. Create a test program, src/s21_string_test.c, that should include the s21_strlen_test function for checking the s21_strlen function with a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strlen function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strlen_tests. The executable file should be stored at the root in the build folder. It should be named Quest_1. ==***
 
@@ -311,7 +316,12 @@ Oh for god's sake. Looks like I have to add this function to the library as well
     
 Ok. It's not the worst thing you've done to get the doors to open.
 
-***== Quest 8 received. Create an src/text_processor.c program that takes a number (line width) and text of up to 100 characters as input to stdin, when launched with the -w command-line switch. For any other switches, the program should output "n/a". The compiled file must be named Quest_8. When launched with the -w switch, the program justifies the input text and outputs it to stdout, mimicking the behavior of a word processor. The text should be divided into several lines, each having a specified number of characters. Lines cannot start with a space and cannot end with a space if the line fits more than one word or it's not the last line. A word can be split to jump to a new line only if it does not fit on one line entirely. In all other cases, it must remain intact. The words in a line must be distributed evenly, filling the gaps between them with spaces. Using string.h is not allowed. ==***
+***== Quest 8 received. Create an src/text_processor.c program that takes a number (line width) and text of up to 100 characters, ending with a line break, as input to stdin, when launched with the -w command-line switch. For any other switches, the program should output "n/a". The compiled file must be named Quest_8. When launched with the -w switch, the program justifies the input text and outputs it to stdout, mimicking the behavior of a word processor. The text should be divided into several lines, each having a specified number of characters. Lines cannot start with a space and cannot end with a space, the last line must not end with a line break. A word can be split to jump to a new line through the symbol '-' only if it does not fit on one line entirely. In all other cases, it must remain intact. The words in a line must be distributed evenly, filling the gaps between them with spaces. Using string.h is not allowed. ==***
+
+| Terminal arguments | Input | Output |
+| ------ | ------ | ------ |
+| -w | 10<br/>hello how are you | hello how<br/>are you |
+| -w | 5<br/>ab abcd ab abcd ab abcdefgh | ab<br/>abcd<br/>ab<br/>abcd<br/>ab a-<br/>bcde-<br/>fgh |
 
 ***LOADING...***
 
