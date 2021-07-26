@@ -1,5 +1,5 @@
 # T10D16
-The russian version of the task can be found in the repository.
+The Russian version of the task can be found in the repository.
 
 You can find some useful video materials [here](https://edu.21-school.ru/video/selection/925365ef-066d-4be6-81a9-2667102d8da9).
 
@@ -126,7 +126,7 @@ It looks a lot like a man printout. Even the font is the same as in the terminal
        from <stddef.h>.
 
 You wonder how many functions this library has... Perhaps you should go the iterative route and try to restart the program module after adding each function. Maybe it doesn't need all the functions.. 
-Otherwise you can get stuck here for a long time.
+Otherwise, you can get stuck here for a long time.
 
 \> *Come up to the computer again*
 
@@ -271,7 +271,7 @@ Finally!
     
     Emergency message: extended string.h library calls are unavailable – the strtok function is not found.
     
-Oh for god's sake. Looks like I have to add this function to the library as well.
+Oh, for god's sake. Looks like I have to add this function to the library as well.
 
 ***== Quest 7 received. Add declaration and definition of the s21_strtok function to src/s21_string.h and src/s21_string.c files. Add the s21_strtok_test function to the src/s21_string_test.c file for checking the s21_strtok function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strtok function, only use language features. Using string.h and other libraries is not allowed. Build the program using the makefile. Name of the build stage: strtok_tests. The executable file should be stored at the root in the build folder. It should be named Quest_7. ==***
 
