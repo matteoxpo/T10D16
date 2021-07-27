@@ -154,12 +154,14 @@ You come up to the computer and notice another open book next to it. Somehow you
 
 Perhaps you should also create tests for every new function to make sure they work absolutely correctly. Who knows how broken code can affect the linguistics module that is already not working. And you still need to get out of this room. Plus, if something goes wrong, it will be easier to find the error with the tests. 
 
-For each added function in src/s21_string.h, add a test developed based on the idea of unit testing to the src/s21_string_test.h file, with the name of the function and the test_ prefix which checks the function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. 
+For each added function in src/s21_string.h, add a test developed based on the idea of unit testing to the src/s21_string_test.h file, with the name of the function and the _test postfix which checks the function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. 
 
 > DON'T FORGET! All your programs are tested for the style norm and memory leaks. Start-up instructions
 > the list of tests is also in the `materials` folder
 
 ***== Quest 1 received. Create src/s21_string.h and src/s21_string.c files and add declaration and definition of the s21_strlen function to them. Create a test program, src/s21_string_test.c, that should include the s21_strlen_test function for checking the s21_strlen function with a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strlen function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strlen_tests. The executable file should be stored at the root in the build folder. It should be named Quest_1. ==***
+
+> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
 
 ***LOADING...***
 
@@ -179,6 +181,8 @@ Let's continue..
 
 ***== Quest 2 received.  Add declaration and definition of the s21_strcmp function to src/s21_string.h and src/s21_string.c files. Add the s21_strcmp_test function to the src/s21_string_test.c file for checking the s21_strcmp function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strcmp function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strcmp_tests. The executable file should be stored at the root in the build folder. It should be named Quest_2. ==***
 
+> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
+
 ***LOADING...***
 
 
@@ -195,6 +199,8 @@ Let's continue..
 
 ***== Quest 3 received.  Add declaration and definition of the s21_strcpy function to src/s21_string.h and src/s21_string.c files. Add the s21_strcpy_test function to the src/s21_string_test.c file for checking the s21_strcpy function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strcpy function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strcpy_tests. The executable file should be stored at the root in the build folder. It should be named Quest_3. ==***
 
+> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
+
 ***LOADING...***
 
 
@@ -208,6 +214,8 @@ Let's continue..
     Emergency message: standard string.h library calls are unavailable. The linguistics module cannot work.
 
 ***== Quest 4 received. Add declaration and definition of the s21_strcat function to src/s21_string.h and src/s21_string.c files. Add the s21_strcat_test function to the src/s21_string_test.c file for checking the s21_strcat function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strcat function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strcat_tests. The executable file should be stored at the root in the build folder. It should be named Quest_4. ==***
+
+> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
 
 ***LOADING...***
 
@@ -223,6 +231,8 @@ Let's continue..
 
 ***== Quest 5 received. Add declaration and definition of the s21_strchr function to src/s21_string.h and src/s21_string.c files. Add the s21_strchr_test function to the src/s21_string_test.c file for checking the s21_strchr function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strchr function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strchr_tests. The executable file should be stored at the root in the build folder. It should be named Quest_5. ==***
 
+> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
+
 ***LOADING...***
 
 
@@ -237,6 +247,8 @@ Let's continue..
 How many calls does this module use?
     
 ***== Quest 6 received. Add declaration and definition of the s21_strstr function to src/s21_string.h and src/s21_string.c files. Add the s21_strstr_test function to the src/s21_string_test.c file for checking the s21_strstr function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strstr function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strstr_tests. The executable file should be stored at the root in the build folder. It should be named Quest_6. ==***
+
+> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
 
 ***LOADING...***
 
@@ -274,6 +286,8 @@ Finally!
 Oh, for god's sake. Looks like I have to add this function to the library as well.
 
 ***== Quest 7 received. Add declaration and definition of the s21_strtok function to src/s21_string.h and src/s21_string.c files. Add the s21_strtok_test function to the src/s21_string_test.c file for checking the s21_strtok function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strtok function, only use language features. Using string.h and other libraries is not allowed. Build the program using the makefile. Name of the build stage: strtok_tests. The executable file should be stored at the root in the build folder. It should be named Quest_7. ==***
+
+> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
 
 ***LOADING...***
 
@@ -322,6 +336,8 @@ Ok. It's not the worst thing you've done to get the doors to open.
 | ------ | ------ | ------ |
 | -w | 10<br/>hello how are you | hello how<br/>are you |
 | -w | 5<br/>ab abcd ab abcd ab abcdefgh | ab<br/>abcd<br/>ab<br/>abcd<br/>ab a-<br/>bcde-<br/>fgh |
+
+> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
 
 ***LOADING...***
 
