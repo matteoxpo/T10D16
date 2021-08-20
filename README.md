@@ -161,7 +161,7 @@ For each added function in src/s21_string.h, add a test developed based on the i
 
 ***== Quest 1 received. Create src/s21_string.h and src/s21_string.c files and add declaration and definition of the s21_strlen function to them. Create a test program, src/s21_string_test.c, that should include the s21_strlen_test function for checking the s21_strlen function with a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strlen function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strlen_tests. The executable file should be stored at the root in the build folder. It should be named Quest_1. ==***
 
-> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
+> It is allowed to use only the following standard libraries: stdlib. h, stdio. h
 
 ***LOADING...***
 
@@ -181,7 +181,7 @@ Let's continue..
 
 ***== Quest 2 received.  Add declaration and definition of the s21_strcmp function to src/s21_string.h and src/s21_string.c files. Add the s21_strcmp_test function to the src/s21_string_test.c file for checking the s21_strcmp function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strcmp function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strcmp_tests. The executable file should be stored at the root in the build folder. It should be named Quest_2. ==***
 
-> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
+> It is allowed to use only the following standard libraries: stdlib. h, stdio. h
 
 ***LOADING...***
 
@@ -199,7 +199,7 @@ Let's continue..
 
 ***== Quest 3 received.  Add declaration and definition of the s21_strcpy function to src/s21_string.h and src/s21_string.c files. Add the s21_strcpy_test function to the src/s21_string_test.c file for checking the s21_strcpy function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strcpy function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strcpy_tests. The executable file should be stored at the root in the build folder. It should be named Quest_3. ==***
 
-> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
+> It is allowed to use only the following standard libraries: stdlib. h, stdio. h
 
 ***LOADING...***
 
@@ -215,7 +215,7 @@ Let's continue..
 
 ***== Quest 4 received. Add declaration and definition of the s21_strcat function to src/s21_string.h and src/s21_string.c files. Add the s21_strcat_test function to the src/s21_string_test.c file for checking the s21_strcat function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strcat function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strcat_tests. The executable file should be stored at the root in the build folder. It should be named Quest_4. ==***
 
-> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
+> It is allowed to use only the following standard libraries: stdlib. h, stdio. h
 
 ***LOADING...***
 
@@ -231,7 +231,7 @@ Let's continue..
 
 ***== Quest 5 received. Add declaration and definition of the s21_strchr function to src/s21_string.h and src/s21_string.c files. Add the s21_strchr_test function to the src/s21_string_test.c file for checking the s21_strchr function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strchr function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strchr_tests. The executable file should be stored at the root in the build folder. It should be named Quest_5. ==***
 
-> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
+> It is allowed to use only the following standard libraries: stdlib. h, stdio. h
 
 ***LOADING...***
 
@@ -248,7 +248,7 @@ How many calls does this module use?
     
 ***== Quest 6 received. Add declaration and definition of the s21_strstr function to src/s21_string.h and src/s21_string.c files. Add the s21_strstr_test function to the src/s21_string_test.c file for checking the s21_strstr function using a set of test data (minimum 3): normal values, abnormal values, boundary values, etc. For each test, the input, output, and test result (SUCCESS/FAIL) must be output to stdout. Add the launch of this function to main. When developing the s21_strstr function, only use language features. Using string.h and other libraries is not allowed. Build the program using the Makefile. Name of the build stage: strstr_tests. The executable file should be stored at the root in the build folder. It should be named Quest_6. ==***
 
-> It is allowed to use only the following standard libraries: <stdlib. h>, <stdio. h>
+> It is allowed to use only the following standard libraries: stdlib. h, stdio. h
 
 ***LOADING...***
 
@@ -330,7 +330,7 @@ Oh, for god's sake. Looks like I have to add this function to the library as wel
     
 Ok. It's not the worst thing you've done to get the doors to open.
 
-***== Quest 8 received. Create an src/text_processor.c program that takes a number (line width) and text of up to 100 characters, ending with a line break, as input to stdin, when launched with the -w command-line switch. For any other switches, the program should output "n/a". The compiled file must be named Quest_8. When launched with the -w switch, the program justifies the input text and outputs it to stdout, mimicking the behavior of a word processor. The text should be divided into several lines, each having a specified number of characters. Lines cannot start with a space and cannot end with a space, the last line must not end with a line break. A word can be split to jump to a new line through the symbol '-' only if it does not fit on one line entirely. In all other cases, it must remain intact. The words in a line must be distributed evenly, filling the gaps between them with spaces. Using string.h is not allowed. ==***
+***== Quest 8 received. Create an src/text_processor.c program that takes a number (line width) and text of up to 100 characters, ending with a line break, as input to stdin, when launched with the -w command-line switch. For any other switches, the program should output "n/a". When launched with the -w switch, the program justifies the input text and outputs it to stdout, mimicking the behavior of a word processor. The text should be divided into several lines, each having a specified number of characters. Lines cannot start with a space and cannot end with a space, the last line must not end with a line break. A word can be split to jump to a new line through the symbol '-' only if it does not fit on one line entirely. In all other cases, it must remain intact. The words in a line must be distributed evenly, filling the gaps between them with spaces. Using string.h is not allowed.  Name of the build stage: text_processor. The executable file should be stored at the root in the build folder. It should be named Quest_8. ==***
 
 | Terminal arguments | Input | Output |
 | ------ | ------ | ------ |
