@@ -21,7 +21,7 @@ You can find some useful video materials [here](https://edu.21-school.ru/video/s
  3.5. [Quest 5. Strchr.](#quest-5-strchr) \
  3.6. [Quest 6. Strstr.](#quest-6-strstr) \
  3.7. [Quest 7. Strtok.](#quest-7-strtok) \
- 3.8. [Quest 8. Width.](#quest-8-width) 
+ 3.8. [Quest 8*. Width.](#bonus-quest-8-width) 
 4. [Chapter IV](#chapter-iv) 
 
 
@@ -292,7 +292,7 @@ Oh, for god's sake. Looks like I have to add this function to the library as wel
 ***LOADING...***
 
 
-## Quest 8. Width.
+## Bonus Quest 8*. Width.
 
 \> *Restarting the module*
 
@@ -320,15 +320,13 @@ Oh, for god's sake. Looks like I have to add this function to the library as wel
     Analyzing the answer.... Answer analyzed.
     Answer characteristics: sarcasm, pain, discouragement, distrust, fear, rejection.
     Searching for a compromise....
-    Compromise found: implement part of the task instead of the whole task.
+    Compromise #1: implement part of the task instead of the whole task.
     Create an src/text_processor.c program that runs in one mode only 
     with the -w switch (formatting–justified), taking a number and text of up to 100 characters via stdin.
     As a result, it should create and output justified text. 
     The width of a text line in characters is determined by the first number. 
-    The task is final and conclusive.
     After updating the room's remote repository, the door will be unlocked.
-    
-Ok. It's not the worst thing you've done to get the doors to open.
+    Compromise #2: leave.
 
 ***== Quest 8 received. Create an src/text_processor.c program that takes a number (line width) and text of up to 100 characters, ending with a line break, as input to stdin, when launched with the -w command-line switch. For any other switches, the program should output "n/a". When launched with the -w switch, the program justifies the input text and outputs it to stdout, mimicking the behavior of a word processor. The text should be divided into several lines, each having a specified number of characters. Lines cannot start with a space and cannot end with a space, the last line must not end with a line break. A word can be split to jump to a new line through the symbol '-' only if it does not fit on one line entirely. In all other cases, it must remain intact. The words in a line must be distributed evenly, filling the gaps between them with spaces. Using string.h is not allowed.  Name of the build stage: text_processor. The executable file should be stored at the root in the build folder. It should be named Quest_8. ==***
 
@@ -344,7 +342,7 @@ Ok. It's not the worst thing you've done to get the doors to open.
 
 # Chapter IV
 
-\> *Type in "Can I leave now?"*
+\> *Type in "So I can leave now?"*
 
     All exit conditions: fulfilled.
     One more left.
