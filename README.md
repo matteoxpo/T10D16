@@ -3,7 +3,7 @@ The Russian version of the task can be found in the repository.
 
 You can find some useful video materials [here](https://edu.21-school.ru/video/selection/925365ef-066d-4be6-81a9-2667102d8da9).
 
-![This day will help you get acquainted with characters and strings (C).](misc/eng/images/day10_door.png)
+![This day will help you get acquainted with characters and strings (C).](/misc/eng/images/day10_door.png)
 
 
 ## Contents
