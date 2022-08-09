@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "s21_string.h": "c",
+        "stdlib.h": "c"
+    }
+}
