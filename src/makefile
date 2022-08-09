@@ -6,6 +6,7 @@ SOURCES = s21_string_test.c s21_string.c
 OBJECTS = $(SOURCES:.c=.o)
 OBJ = s21_string_test.c s21_string.c
 EXECUTABLE = main
+QUESTS = Quest1 Quest2 Quest3 Quest4 Quest5 Quest6
 
 all: $(OBJECTS)
 	$(CC) $(OBJECTS) -o $(EXECUTABLE)
@@ -56,3 +57,4 @@ STRCHR:
 clean:
 	-rm $(OBJECTS)
 	-rm $(EXECUTABLE)
+	-rm $(QUESTS)

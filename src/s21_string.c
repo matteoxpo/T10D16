@@ -49,10 +49,14 @@ char *s21_strcat(char *str1, char *str2) {
 
 char *s21_strchr(char *str1, int symbol) {
   char *p = NULL;
-  printf("123\n");
-  printf("str:%s\tsymbol:%c\n", str1, symbol);
-  for (int i = 0; i < s21_strlen(str1); i++) {
+  for (int i = 0; i < s21_strlen(str1) || str1[i] != '\0'; i++) {
     if (str1[i] == symbol) p = (str1 + i);
   }
   return p;
+}
+
+char *s21_strstr(char *str1, char *str2) {
+  char *res = str1;
+  res = str2;
+  return res;
 }

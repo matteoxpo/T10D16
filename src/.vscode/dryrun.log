@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/kwaltzbu/T10D16-0/src'
+gcc -Wall -Werror -Wextra -c   -c -o s21_string_test.o s21_string_test.c
+ 
+gcc -Wall -Werror -Wextra -c   -c -o s21_string.o s21_string.c
+gcc s21_string_test.o s21_string.o -o main
+make: Leaving directory `/Users/kwaltzbu/T10D16-0/src'
+ 
