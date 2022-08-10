@@ -49,14 +49,41 @@ char *s21_strcat(char *str1, char *str2) {
 
 char *s21_strchr(char *str1, int symbol) {
   char *p = NULL;
-  for (int i = 0; i < s21_strlen(str1) || str1[i] != '\0'; i++) {
-    if (str1[i] == symbol) p = (str1 + i);
+  for (int i = 0; i < s21_strlen(str1) + 1 || str1[i] != '\0'; i++) {
+    if (str1[i] == symbol) {
+      p = (str1 + i);
+      break;
+    }
   }
   return p;
 }
 
+int s21_compare(char *str1, char *str2) {
+  int res = 1;
+  while (*str1 && *str2) {
+    if (*str1 != *str2) {
+      res = 0;
+    }
+    str1++;
+    str2++;
+  }
+  return res;
+}
+
 char *s21_strstr(char *str1, char *str2) {
-  char *res = str1;
-  res = str2;
+  char *res = NULL;
+  if (*str2 == '\0') {
+    res = str1 + s21_strlen(str1);
+    str1 += s21_strlen(str1);
+  }
+  while (*str1 != '\0') {
+    if (*str1 == *str2) {
+      if (s21_compare(str1, str2)) {
+        res = str1;
+        break;
+      }
+    }
+    str1++;
+  }
   return res;
 }

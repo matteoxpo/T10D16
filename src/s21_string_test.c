@@ -157,34 +157,77 @@ void s21_strchr_test() {
   char *test2 = "\0";
   char *test3 = "Hello!\0";
   char *test4 = "abc\0";
+  char *test5 = "school pro";
   char *res;
 
   res = s21_strchr(test1, '3');
-
-  printf("%s 3 %d", test1, *res);
+  printf("%s 3 %c\n", test1, *res);
   if (*res == '3')
     printf("SUCCESS\n");
   else
     printf("FAIL\n");
 
   res = s21_strchr(test2, '\0');
-  if (res == NULL)
+  printf("%s  \\0 %s\n", test2, res);
+  if (res == test2)
     printf("SUCCESS\n");
   else
     printf("FAIL\n");
 
   res = s21_strchr(test3, '\0');
-  if (res == NULL)
+  printf("%s \\0 %s\n", test3, res);
+  if (*(res - 1) == test3[5])
     printf("SUCCESS\n");
   else
     printf("FAIL\n");
 
   res = s21_strchr(test4, 'd');
+  printf("%s d %s\n", test4, res);
   if (res == NULL)
     printf("SUCCESS\n");
   else
     printf("FAIL\n");
+
+  res = s21_strchr(test5, 'o');
+  printf("%s o %s\n", test5, res);
+  if (*res == '0')
+    printf("SUCCESS\n");
+  else
+    printf("FAIL\n");
 }
+
+void s21_strstr_test() {
+  char *test1 = "Hello world, i love this world";
+  char *test2 = "HElloo";
+  char *test3 = "1\0";
+  char *word1 = "world";
+  char *word2 = "o";
+  char *word3 = "\0";
+
+  char *res;
+
+  res = s21_strstr(test1, word1);
+  printf("%s\t%s\t%s\n", test1, word1, res);
+  if (s21_compare(res, word1))
+    printf("SUCCESS\n");
+  else
+    printf("FAIL\n");
+
+  res = s21_strstr(test2, word2);
+  printf("%s\t%s\t%s\n", test2, word2, res);
+  if (s21_compare(res, word2))
+    printf("SUCCESS\n");
+  else
+    printf("FAIL\n");
+
+  res = s21_strstr(test3, word3);
+  printf("%s\t%s\t%s\n", test3, word3, res);
+  if (s21_compare(res, word3))
+    printf("SUCCESS\n");
+  else
+    printf("FAIL\n");
+}
+
 int main() {
 #ifdef STRLEN
   s21_strlen_test();
@@ -196,5 +239,7 @@ int main() {
   s21_strcat_test();
 #elif STRCHR
   s21_strchr_test();
+#elif STRSTR
+  s21_strstr_test();
 #endif
 }

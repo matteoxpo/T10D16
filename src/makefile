@@ -6,7 +6,7 @@ SOURCES = s21_string_test.c s21_string.c
 OBJECTS = $(SOURCES:.c=.o)
 OBJ = s21_string_test.c s21_string.c
 EXECUTABLE = main
-QUESTS = Quest1 Quest2 Quest3 Quest4 Quest5 Quest6
+QUESTS = Quest_1 Quest_2 Quest_3 Quest_4 Quest_5 Quest_6
 
 all: $(OBJECTS)
 	$(CC) $(OBJECTS) -o $(EXECUTABLE)
@@ -17,19 +17,22 @@ $(EXECUTABLE): $(OBJECTS)
 rebuild: clean all
 
 strlen_tests: STRLEN
-	$(CC) $(OBJECTS) -o Quest1
+	$(CC) $(OBJECTS) -o ../Build/Quest_1
 
 strcmp_tests: STRCMP
-	$(CC) $(OBJECTS) -o Quest2
+	$(CC) $(OBJECTS) -o ../Build/Quest_2
 
 strcpy_tests: STRCPY
-	$(CC) $(OBJECTS) -o Quest3
+	$(CC) $(OBJECTS) -o ../Build/Quest_3
 
 strcat_tests: STRCAT
-	$(CC) $(OBJECTS) -o Quest4
+	$(CC) $(OBJECTS) -o ../Build/Quest_4
 
-s21_strchr_test: STRCHR
-	$(CC) $(OBJECTS) -o Quest5
+strchr_test: STRCHR
+	$(CC) $(OBJECTS) -o ../Build/Quest_5
+
+strstr_test: STRSTR
+	$(CC) $(OBJECTS) -o ../Build/Quest_6
 
 STRLEN:
 	$(CC) -DSTRLEN $(CFLAGS) -c s21_string_test.c -o s21_string_test.o
@@ -50,6 +53,10 @@ STRCAT:
 STRCHR:
 	$(CC) -DSTRCHR $(CFLAGS) -c s21_string_test.c -o s21_string_test.o
 	$(CC) -DSTRCHR $(CFLAGS) -c s21_string.c -o s21_string.o
+
+STRSTR:
+	$(CC) -DSTRSTR $(CFLAGS) -c s21_string_test.c -o s21_string_test.o
+	$(CC) -DSTRSTR $(CFLAGS) -c s21_string.c -o s21_string.o
 
 .o: .c
 	$(CC) $(CFLAGS) -c $< -o $@
