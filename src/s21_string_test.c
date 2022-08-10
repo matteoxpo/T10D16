@@ -191,9 +191,9 @@ void s21_strchr_test() {
   res = s21_strchr(test5, 'o');
   printf("%s o %s\n", test5, res);
   if (*res == '0')
-    printf("SUCCESS\n");
+    printf("SUCCESS");
   else
-    printf("FAIL\n");
+    printf("FAIL");
 }
 
 void s21_strstr_test() {
@@ -223,9 +223,9 @@ void s21_strstr_test() {
   res = s21_strstr(test3, word3);
   printf("%s\t%s\t%s\n", test3, word3, res);
   if (s21_compare(res, word3))
-    printf("SUCCESS\n");
+    printf("SUCCESS");
   else
-    printf("FAIL\n");
+    printf("FAIL");
 }
 
 int main() {
